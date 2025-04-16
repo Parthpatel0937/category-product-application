@@ -22,7 +22,7 @@ public class ProductController {
 
     @GetMapping
     public ResponseEntity<Page<Product>> getAllProducts(@RequestParam(defaultValue = "0")int page){
-        return new ResponseEntity<>(productService.getAllCompanies(page),HttpStatus.OK);
+        return new ResponseEntity<>(productService.getAllProduct(page),HttpStatus.OK);
     }
 
     @PostMapping

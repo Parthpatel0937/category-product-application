@@ -20,7 +20,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Page<Product> getAllCompanies(int page){
+    public Page<Product> getAllProduct(int page){
         return productRepository.findAll(PageRequest.of(page,5));
     }
 
